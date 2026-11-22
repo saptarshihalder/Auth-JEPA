@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 
 
-def tile_nll(mu, var, P):  # Gaussian negative log-likelihood, summed over 74 measurements
+def tile_nll(mu, var, P):  # loss function: Gaussian NLL = 1/2 * sum over 74 [log var + (measured - mean)^2 / var]
     return 0.5 * (var.log() + (P - mu) ** 2 / var).sum(-1)
 
 
@@ -32,7 +32,7 @@ def train(net, C_train, P_train, C_val, P_val, epochs=96):  # real photos only
 def image_score(net, C, P):  # C: (images, 16, 15) inputs, P: (images, 16, 74) measured noise
     mu, var = net(C)
     patch_score = tile_nll(mu, var, P)  # patch score
-    return patch_score.mean(1)  # image score = mean of the 16 patch scores
+    return patch_score.mean(1)  # image score S(x) = mean of the 16 patch scores (high = AI)
 
 
 def robust(X):  # scaling fitted on real photos: (x - median) / (1.4826 * MAD)
