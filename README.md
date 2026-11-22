@@ -27,20 +27,24 @@ Loss (one patch):  L_t  = 1/2 × Σ over d = 1..74 of [ log σ²(t,d) + (φ(t,d)
 Image score:       S(x) = 1/16 × Σ over t = 1..16 of L_t
 ```
 
+where
+
+| Symbol | Meaning |
+|---|---|
+| x | input image |
+| t | patch number, 1 to 16 |
+| d | noise measurement number, 1 to 74 |
+| φ(t,d) | measured value of measurement d in patch t |
+| μ(t,d) | predicted mean (expected value) |
+| σ²(t,d) | predicted variance (expected spread) |
+| L_t | patch score = loss for patch t |
+| S(x) | image score (low = real, high = AI) |
+| Σ | sum |
+| log | natural logarithm |
+
 - **log σ²** stops the network from predicting a large spread everywhere.
 - **(φ − μ)² / σ²** penalises a wrong prediction, scaled by the expected spread.
 - **Training** minimises the mean of L_t over all patches of the real training photos. No AI-generated image is used.
 - **Image score** is the same quantity averaged over the 16 patches of a 512 × 512 window. Low = noise looks like a real camera's; high = flagged as AI-generated.
 
 Both are implemented by `tile_nll` in `06_training_and_score/loss_and_score.py`.
-
-| Symbol | Meaning |
-|---|---|
-| x | input image |
-| t | patch, 1 to 16 |
-| d | noise measurement, 1 to 74 |
-| φ(t,d) | measured value |
-| μ(t,d) | predicted mean |
-| σ²(t,d) | predicted variance |
-| L_t | patch score (loss) |
-| S(x) | image score |
