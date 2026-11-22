@@ -16,6 +16,31 @@ Detecting AI-generated images by predicting camera physics, trained on real phot
 | `dataset` | file lists and example images for every dataset and generator |
 | `output` | result tables and output images, by slide |
 
+## Quick find
+
+| Question | File | Line |
+|---|---|---|
+| 512 × 512 window, 16 patches | `01_patches/patches.py` | 6, 15 |
+| Wiener filter (denoiser) | `02_denoiser/wiener_filter.py` | 14 |
+| Removed noise = patch − smoothed patch | `02_denoiser/wiener_filter.py` | 34 |
+| 13 picture measurements | `03_inputs/picture_measurements.py` | 5 |
+| JPEG flag and quality | `03_inputs/jpeg_information.py` | 19 |
+| All 74 noise measurements | `04_noise_measurements/noise_measurements.py` | 115 |
+| Noise vs brightness | `04_noise_measurements/noise_measurements.py` | 32 |
+| Linear transform 15 → 128 | `05_predictor/network.py` | 11 |
+| Transformer: width 128, 4 blocks, 4 heads | `05_predictor/network.py` | 9, 13, 14 |
+| Each patch sees only itself | `05_predictor/network.py` | 20 |
+| LayerNorm | `05_predictor/network.py` | 16 |
+| Output layer 128 → 148 | `05_predictor/network.py` | 17 |
+| Split into 74 means and 74 variances | `05_predictor/network.py` | 26 |
+| Softplus: variance always positive | `05_predictor/network.py` | 27 |
+| Loss function (Gaussian NLL) | `06_training_and_score/loss_and_score.py` | 6 |
+| Training loss, optimiser, best epoch | `06_training_and_score/loss_and_score.py` | 10 to 27 |
+| Patch score and image score | `06_training_and_score/loss_and_score.py` | 34, 35 |
+| JPEG-90 test images | `07_test_conditions/jpeg90.py` | 6 |
+| AUROC per generator, then averaged | `08_auroc/auroc.py` | 10 |
+| Two models and the fixed cut-off | `09_two_models_threshold/council.py` | 10, 14 |
+
 ## Loss function and score
 
 Auth-JEPA is trained with the **Gaussian negative log-likelihood (NLL)**. For every patch *t*, the predictor gives a mean μ and a variance σ² for each of the 74 noise measurements *d*. The loss compares them with the measured value φ.
