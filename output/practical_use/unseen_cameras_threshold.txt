@@ -1,0 +1,21 @@
+Council (per-tile sharp + per-tile broad), threshold = 95th percentile of seen-camera reals; unseen = fresh photos of ['Canon EOS 20D', 'NIKON D80', 'Canon EOS-1D Mark II', 'Canon EOS 30D']
+== raw
+  sharp (per-tile)  s0: FPR unseen 0.068 0.022 0.118 0.067 median 0.067 worst 0.118 | D90 0.000 | RAISE-AUROC sb 0.989 | caught sb 0.002 flux 0.000 sd3_large 0.000 OpenFake 0.001
+  broad (per-tile)  s0: FPR unseen 0.038 0.022 0.007 0.000 median 0.015 worst 0.038 | D90 0.405 | RAISE-AUROC sb 0.887 | caught sb 0.821 flux 0.964 sd3_large 0.715 OpenFake 0.890
+  COUNCIL           s0: FPR unseen 0.064 0.044 0.007 0.000 median 0.026 worst 0.064 | D90 0.000 | RAISE-AUROC sb 0.975 | caught sb 0.871 flux 0.979 sd3_large 0.817 OpenFake 0.924
+  sharp (per-tile)  s1: FPR unseen 0.083 0.022 0.104 0.200 median 0.094 worst 0.200 | D90 0.000 | RAISE-AUROC sb 0.991 | caught sb 0.002 flux 0.000 sd3_large 0.000 OpenFake 0.001
+  broad (per-tile)  s1: FPR unseen 0.034 0.000 0.021 0.000 median 0.010 worst 0.034 | D90 0.452 | RAISE-AUROC sb 0.920 | caught sb 0.877 flux 0.986 sd3_large 0.785 OpenFake 0.910
+  COUNCIL           s1: FPR unseen 0.060 0.044 0.028 0.000 median 0.036 worst 0.060 | D90 0.000 | RAISE-AUROC sb 0.981 | caught sb 0.907 flux 0.989 sd3_large 0.873 OpenFake 0.943
+  sharp (per-tile)  s2: FPR unseen 0.064 0.000 0.097 0.067 median 0.065 worst 0.097 | D90 0.000 | RAISE-AUROC sb 0.995 | caught sb 0.002 flux 0.000 sd3_large 0.000 OpenFake 0.001
+  broad (per-tile)  s2: FPR unseen 0.026 0.000 0.028 0.000 median 0.013 worst 0.028 | D90 0.405 | RAISE-AUROC sb 0.920 | caught sb 0.880 flux 0.979 sd3_large 0.737 OpenFake 0.892
+  COUNCIL           s2: FPR unseen 0.053 0.000 0.035 0.000 median 0.017 worst 0.053 | D90 0.024 | RAISE-AUROC sb 0.983 | caught sb 0.919 flux 0.993 sd3_large 0.850 OpenFake 0.945
+== q90
+  sharp (per-tile)  s0: FPR unseen 0.083 0.067 0.146 0.200 median 0.114 worst 0.200 | D90 0.000 | RAISE-AUROC sb 0.922 | caught sb 0.233 flux 0.419 sd3_large 0.205 OpenFake 0.369
+  broad (per-tile)  s0: FPR unseen 0.034 0.022 0.028 0.067 median 0.031 worst 0.067 | D90 0.095 | RAISE-AUROC sb 0.858 | caught sb 0.432 flux 0.999 sd3_large 0.968 OpenFake 0.997
+  COUNCIL           s0: FPR unseen 0.038 0.044 0.028 0.067 median 0.041 worst 0.067 | D90 0.071 | RAISE-AUROC sb 0.888 | caught sb 0.496 flux 0.943 sd3_large 0.683 OpenFake 0.732
+  sharp (per-tile)  s1: FPR unseen 0.072 0.000 0.118 0.200 median 0.095 worst 0.200 | D90 0.000 | RAISE-AUROC sb 0.916 | caught sb 0.222 flux 0.393 sd3_large 0.175 OpenFake 0.341
+  broad (per-tile)  s1: FPR unseen 0.042 0.044 0.021 0.067 median 0.043 worst 0.067 | D90 0.119 | RAISE-AUROC sb 0.868 | caught sb 0.521 flux 1.000 sd3_large 0.994 OpenFake 1.000
+  COUNCIL           s1: FPR unseen 0.042 0.044 0.021 0.067 median 0.043 worst 0.067 | D90 0.095 | RAISE-AUROC sb 0.888 | caught sb 0.503 flux 0.949 sd3_large 0.668 OpenFake 0.745
+  sharp (per-tile)  s2: FPR unseen 0.087 0.067 0.104 0.133 median 0.095 worst 0.133 | D90 0.000 | RAISE-AUROC sb 0.927 | caught sb 0.249 flux 0.457 sd3_large 0.195 OpenFake 0.360
+  broad (per-tile)  s2: FPR unseen 0.034 0.044 0.028 0.000 median 0.031 worst 0.044 | D90 0.119 | RAISE-AUROC sb 0.874 | caught sb 0.607 flux 1.000 sd3_large 0.994 OpenFake 1.000
+  COUNCIL           s2: FPR unseen 0.038 0.044 0.035 0.000 median 0.036 worst 0.044 | D90 0.071 | RAISE-AUROC sb 0.901 | caught sb 0.604 flux 0.979 sd3_large 0.791 OpenFake 0.813

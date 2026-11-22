@@ -1,0 +1,15 @@
+s0 atk_bil   typicality 1.000  per-gen 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  top groups xcorr=1.000 cfa+=1.000 acf=1.000
+s0 atk_mhc   typicality 0.995  per-gen 0.99 1.00 1.00 1.00 0.99 0.99 1.00 1.00  top groups xcorr=0.998 cfa+=0.996 flat+=0.984
+s0 atk_cam   typicality 0.993  per-gen 0.99 0.99 1.00 0.99 0.99 0.99 1.00 1.00  top groups xcorr=0.999 flat+=0.987 cfa+=0.985
+s0 atk_camq  typicality 0.845  per-gen 0.87 0.85 0.78 0.87 0.89 0.88 0.80 0.82  top groups demosaic+=0.921 cfa+=0.900 nlf+=0.777
+s0 control realcam: AUROC vs clean RAISE 0.993, FPR at clean 5% thr 0.993
+s1 atk_bil   typicality 1.000  per-gen 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  top groups xcorr=1.000 cfa+=1.000 acf=1.000
+s1 atk_mhc   typicality 0.996  per-gen 0.99 1.00 1.00 1.00 0.99 0.99 1.00 1.00  top groups xcorr=0.998 cfa+=0.995 xc1+=0.978
+s1 atk_cam   typicality 0.994  per-gen 0.99 0.99 1.00 0.99 0.99 0.99 1.00 1.00  top groups xcorr=0.998 cfa+=0.986 xc1+=0.980
+s1 atk_camq  typicality 0.839  per-gen 0.86 0.85 0.77 0.86 0.88 0.88 0.80 0.81  top groups demosaic+=0.924 cfa+=0.899 nlf+=0.776
+s1 control realcam: AUROC vs clean RAISE 0.994, FPR at clean 5% thr 1.000
+s2 atk_bil   typicality 1.000  per-gen 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00  top groups xcorr=1.000 acf=1.000 cfa+=1.000
+s2 atk_mhc   typicality 0.997  per-gen 0.99 1.00 1.00 1.00 1.00 0.99 1.00 1.00  top groups xcorr=0.999 cfa+=0.995 flat+=0.987
+s2 atk_cam   typicality 0.996  per-gen 0.99 1.00 1.00 1.00 1.00 0.99 1.00 1.00  top groups xcorr=0.999 flat+=0.991 cfa+=0.987
+s2 atk_camq  typicality 0.850  per-gen 0.87 0.86 0.79 0.87 0.90 0.89 0.80 0.82  top groups demosaic+=0.910 cfa+=0.907 acf=0.776
+s2 control realcam: AUROC vs clean RAISE 0.995, FPR at clean 5% thr 0.993

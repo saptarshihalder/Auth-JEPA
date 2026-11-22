@@ -1,0 +1,31 @@
+members with all three seeds scored: ['PT', 'GS', 'PX', 'PX phys', 'PX learn', 'PX-pure']
+== (b) confirmation, ofv lossless: 33 generators, 5703 fakes, 1140 RAISE reals
+  PT        0.995 / 0.995 / 0.996  (mean 0.995)   null-B 0.58 / 0.57 / 0.58
+  GS        0.993 / 0.989 / 0.993  (mean 0.992)   null-B 0.59 / 0.61 / 0.61   minus PT 95% CI [-0.006, -0.002]
+  PX        0.993 / 0.994 / 0.994  (mean 0.994)   null-B 0.57 / 0.57 / 0.58   minus PT 95% CI [-0.004, +0.001]
+  PX phys   0.988 / 0.988 / 0.991  (mean 0.989)   null-B 0.51 / 0.51 / 0.51   minus PT 95% CI [-0.009, -0.004]
+  PX learn  0.816 / 0.768 / 0.806  (mean 0.796)   null-B 0.60 / 0.62 / 0.62   minus PT 95% CI [-0.214, -0.184]
+  PX-pure   0.459 / 0.518 / 0.468  (mean 0.482)   null-B 0.95 / 0.92 / 0.92   minus PT 95% CI [-0.533, -0.491]
+== (b) confirmation, ofv q90: 33 generators, 5703 fakes, 1140 RAISE reals
+  PT        0.919 / 0.915 / 0.926  (mean 0.920)   null-B 0.54 / 0.56 / 0.55
+  GS        0.884 / 0.871 / 0.872  (mean 0.876)   null-B 0.51 / 0.52 / 0.52   minus PT 95% CI [-0.050, -0.038]
+  PX        0.858 / 0.843 / 0.861  (mean 0.854)   null-B 0.58 / 0.59 / 0.60   minus PT 95% CI [-0.074, -0.057]
+  PX phys   0.850 / 0.849 / 0.855  (mean 0.851)   null-B 0.53 / 0.53 / 0.53   minus PT 95% CI [-0.077, -0.060]
+  PX learn  0.799 / 0.763 / 0.795  (mean 0.786)   null-B 0.59 / 0.60 / 0.60   minus PT 95% CI [-0.149, -0.118]
+  PX-pure   0.312 / 0.463 / 0.327  (mean 0.367)   null-B 0.71 / 0.65 / 0.69   minus PT 95% CI [-0.571, -0.534]
+  bars: Q0 FAIL  Q1 FAIL  Q2 FAIL  Q3 FAIL   (a member that is missing counts as FAIL)
+
+== (a) exploration on the used Table 1 sets (RAISE-only AUROC, mean over generators and seeds; raw / JPEG-90)
+  GS        Synthbuster 0.983 / 0.881   SD3/FLUX 0.978 / 0.921   OpenFake 0.991 / 0.895
+  PX        Synthbuster 0.993 / 0.899   SD3/FLUX 0.993 / 0.962   OpenFake 0.994 / 0.893
+  PX phys   Synthbuster 0.982 / 0.855   SD3/FLUX 0.976 / 0.902   OpenFake 0.988 / 0.876
+  PX learn  Synthbuster 0.874 / 0.872   SD3/FLUX 0.931 / 0.929   OpenFake 0.846 / 0.831
+  PX-pure   Synthbuster 0.534 / 0.397   SD3/FLUX 0.547 / 0.591   OpenFake 0.534 / 0.419
+  PT        Synthbuster 0.991 / 0.922   SD3/FLUX 0.985 / 0.953   OpenFake 0.994 / 0.937
+== (c) used Synthbuster [100:300], 140 RAISE reals (exploration; the data of the family table)
+  per-tile  raw 0.989 / 0.990 / 0.994 (mean 0.991; null-B 0.57-0.58)   JPEG-90 0.920 / 0.915 / 0.925 (mean 0.920; null-B 0.54-0.56)
+  GS        raw 0.992 / 0.983 / 0.989 (mean 0.988; null-B 0.59-0.61)   JPEG-90 0.896 / 0.881 / 0.883 (mean 0.887; null-B 0.51-0.52)
+  PX        raw 0.994 / 0.995 / 0.997 (mean 0.995; null-B 0.57-0.58)   JPEG-90 0.899 / 0.897 / 0.900 (mean 0.899; null-B 0.58-0.60)
+  PX phys   raw 0.977 / 0.981 / 0.985 (mean 0.981; null-B 0.51-0.51)   JPEG-90 0.855 / 0.853 / 0.860 (mean 0.856; null-B 0.53-0.53)
+  PX learn  raw 0.869 / 0.849 / 0.861 (mean 0.859; null-B 0.60-0.62)   JPEG-90 0.863 / 0.855 / 0.858 (mean 0.859; null-B 0.59-0.60)
+  PX-pure   raw 0.536 / 0.625 / 0.549 (mean 0.570; null-B 0.92-0.95)   JPEG-90 0.341 / 0.601 / 0.379 (mean 0.440; null-B 0.65-0.71)

@@ -1,0 +1,16 @@
+JPEG sweep, per-tile model, Synthbuster [850:1000], RAISE-only AUROC, seeds 0/1/2
+  quality none 0.989 / 0.991 / 0.995   (range 0.989-0.995)
+  quality 95   0.908 / 0.883 / 0.903   (range 0.883-0.908)
+  quality 90   0.922 / 0.916 / 0.927   (range 0.916-0.927)
+  quality 75   0.868 / 0.871 / 0.878   (range 0.868-0.878)
+
+Resize, per-tile model: plain / scale-marginal RAISE-only AUROC, Synthbuster [850:1000] and SD3+FLUX, seeds 0/1/2
+  unresized        Synthbuster plain 0.989 / 0.991 / 0.995 marginal 0.970 / 0.972 / 0.982 | SD3+FLUX plain 0.983 / 0.985 / 0.989 marginal 0.965 / 0.971 / 0.977
+  x0.75 lossless   Synthbuster plain 0.702 / 0.687 / 0.695 marginal 0.820 / 0.807 / 0.816 | SD3+FLUX plain 0.499 / 0.508 / 0.494 marginal 0.789 / 0.783 / 0.781
+  x0.50 lossless   Synthbuster plain 0.727 / 0.724 / 0.720 marginal 0.769 / 0.772 / 0.765 | SD3+FLUX plain 0.544 / 0.562 / 0.546 marginal 0.681 / 0.693 / 0.690
+  x0.75 + JPEG-90  Synthbuster plain 0.856 / 0.858 / 0.849 marginal 0.799 / 0.801 / 0.807 | SD3+FLUX plain 0.936 / 0.941 / 0.938 marginal 0.895 / 0.894 / 0.910
+  x0.50 + JPEG-90  Synthbuster plain 0.751 / 0.741 / 0.744 marginal 0.713 / 0.709 / 0.722 | SD3+FLUX plain 0.860 / 0.859 / 0.859 marginal 0.838 / 0.829 / 0.844
+
+Whole images, per-tile model (mean over the image's 512 grid windows); 140 RAISE reals; CI = ours minus B-Free
+  raw  synthbuster 0.993 (B-Free 0.997, CI [-0.014, +0.002])   SD3/FLUX 0.992 (B-Free 0.968, CI [+0.006, +0.041])   OpenFake 0.995 (B-Free 0.783, CI [+0.189, +0.234])
+  q90  synthbuster 0.949 (B-Free 0.998, CI [-0.067, -0.033])   SD3/FLUX 0.986 (B-Free 0.943, CI [+0.022, +0.066])   OpenFake 0.967 (B-Free 0.770, CI [+0.169, +0.224])

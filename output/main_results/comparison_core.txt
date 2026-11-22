@@ -1,0 +1,101 @@
+TABLE 1 (full sets)
+== raw   n fakes: synthbuster 1200, SD3/FLUX 2000, OpenFake 3485;  RAISE reals: 140 -> 1140
+method                 blk  synthbuster 140  ->1140     SD3/FLUX 140  ->1140     OpenFake 140  ->1140   null-C   ours-minus-method 95% CI (enlarged reals)
+ours (per-tile)         A             0.992   0.991            0.986   0.985            0.995   0.994    0.503   
+ours (quality-aware)    abl             0.987   0.984            0.982   0.977            0.993   0.991    0.501   synthbuster: [+0.005, +0.010]  SD3/FLUX: [+0.004, +0.011]  OpenFake: [+0.001, +0.005]
+ZED (rebuild)           A             0.804   0.800            0.621   0.615            0.557   0.550    0.504   synthbuster: [+0.178, +0.204]  SD3/FLUX: [+0.349, +0.391]  OpenFake: [+0.423, +0.464]
+rigid                   A             0.263   0.260            0.213   0.208            0.349   0.350    0.493   synthbuster: [+0.713, +0.749]  SD3/FLUX: [+0.760, +0.792]  OpenFake: [+0.626, +0.663]
+aeroblade               A                 -       -                -       -                -       -    0.508   
+sonoda2026              A             0.264   0.275            0.357   0.373            0.397   0.416    0.475   synthbuster: [+0.698, +0.736]  SD3/FLUX: [+0.591, +0.633]  OpenFake: [+0.560, +0.596]
+px-ijepa                A             0.669   0.647            0.754   0.735            0.702   0.682    0.526   synthbuster: [+0.321, +0.364]  SD3/FLUX: [+0.231, +0.267]  OpenFake: [+0.294, +0.332]
+px-cjepa                A             0.568   0.577            0.499   0.513            0.560   0.570    0.482   synthbuster: [+0.390, +0.438]  SD3/FLUX: [+0.448, +0.495]  OpenFake: [+0.404, +0.446]
+px-lejepa               A             0.739   0.727            0.703   0.688            0.714   0.702    0.529   synthbuster: [+0.242, +0.285]  SD3/FLUX: [+0.275, +0.316]  OpenFake: [+0.273, +0.310]
+px-data2vec             A             0.515   0.477            0.665   0.624            0.597   0.557    0.542   synthbuster: [+0.490, +0.535]  SD3/FLUX: [+0.340, +0.382]  OpenFake: [+0.416, +0.458]
+px-vjepa                A             0.636   0.625            0.770   0.761            0.661   0.650    0.516   synthbuster: [+0.343, +0.387]  SD3/FLUX: [+0.207, +0.242]  OpenFake: [+0.324, +0.364]
+px-dseq                 A             0.360   0.316            0.384   0.339            0.417   0.370    0.553   synthbuster: [+0.655, +0.695]  SD3/FLUX: [+0.627, +0.665]  OpenFake: [+0.605, +0.644]
+px-mae                  A             0.928   0.936            0.906   0.914            0.888   0.894    0.512   synthbuster: [+0.045, +0.065]  SD3/FLUX: [+0.059, +0.082]  OpenFake: [+0.090, +0.110]
+ours (frozen 17)        abl             0.977   0.976            0.971   0.968            0.985   0.986    0.500   synthbuster: [+0.012, +0.019]  SD3/FLUX: [+0.012, +0.021]  OpenFake: [+0.006, +0.011]
+univfd                  B             0.510   0.544            0.320   0.350            0.293   0.328    0.447   synthbuster: [+0.428, +0.465]  SD3/FLUX: [+0.619, +0.650]  OpenFake: [+0.649, +0.683]
+corvi                   B             0.777   0.777            0.921   0.922            0.895   0.897    0.519   synthbuster: [+0.206, +0.222]  SD3/FLUX: [+0.054, +0.071]  OpenFake: [+0.087, +0.108]
+bfree                   B             0.988   0.990            0.933   0.940            0.743   0.763    0.452   synthbuster: [-0.003, +0.005]  SD3/FLUX: [+0.036, +0.053]  OpenFake: [+0.218, +0.245]
+TABLE 2 (declared subsets)
+== raw   n fakes: synthbuster 400, SD3/FLUX 300, OpenFake 750;  RAISE reals: 140 -> 1140
+method                 blk  synthbuster 140  ->1140     SD3/FLUX 140  ->1140     OpenFake 140  ->1140   null-C   ours-minus-method 95% CI (enlarged reals)
+ours (per-tile)         A             0.992   0.992            0.986   0.985            0.995   0.995    0.503   
+ours (quality-aware)    abl             0.988   0.985            0.982   0.978            0.993   0.991    0.501   synthbuster: [+0.004, +0.009]  SD3/FLUX: [+0.004, +0.012]  OpenFake: [+0.001, +0.005]
+ZED (rebuild)           A             0.796   0.792            0.619   0.614            0.558   0.551    0.504   synthbuster: [+0.184, +0.216]  SD3/FLUX: [+0.340, +0.404]  OpenFake: [+0.420, +0.468]
+rigid                   A             0.263   0.260            0.213   0.207            0.361   0.363    0.493   synthbuster: [+0.708, +0.756]  SD3/FLUX: [+0.748, +0.806]  OpenFake: [+0.611, +0.655]
+aeroblade               A             0.644   0.644            0.643   0.646            0.711   0.718    0.508   synthbuster: [+0.324, +0.370]  SD3/FLUX: [+0.308, +0.369]  OpenFake: [+0.256, +0.296]
+sonoda2026              A             0.261   0.272            0.347   0.365            0.392   0.409    0.475   synthbuster: [+0.693, +0.746]  SD3/FLUX: [+0.588, +0.656]  OpenFake: [+0.561, +0.609]
+px-ijepa                A             0.669   0.648            0.749   0.729            0.717   0.697    0.526   synthbuster: [+0.316, +0.373]  SD3/FLUX: [+0.226, +0.285]  OpenFake: [+0.275, +0.321]
+px-cjepa                A             0.581   0.589            0.507   0.520            0.561   0.574    0.482   synthbuster: [+0.373, +0.430]  SD3/FLUX: [+0.435, +0.497]  OpenFake: [+0.395, +0.444]
+px-lejepa               A             0.748   0.739            0.702   0.687            0.725   0.714    0.529   synthbuster: [+0.226, +0.281]  SD3/FLUX: [+0.265, +0.329]  OpenFake: [+0.259, +0.302]
+px-data2vec             A             0.524   0.486            0.667   0.627            0.605   0.565    0.542   synthbuster: [+0.476, +0.531]  SD3/FLUX: [+0.327, +0.390]  OpenFake: [+0.406, +0.453]
+px-vjepa                A             0.626   0.614            0.769   0.759            0.682   0.671    0.516   synthbuster: [+0.346, +0.406]  SD3/FLUX: [+0.197, +0.256]  OpenFake: [+0.301, +0.347]
+px-dseq                 A             0.376   0.331            0.379   0.335            0.432   0.386    0.553   synthbuster: [+0.628, +0.688]  SD3/FLUX: [+0.616, +0.682]  OpenFake: [+0.585, +0.634]
+px-mae                  A             0.924   0.934            0.908   0.916            0.883   0.888    0.512   synthbuster: [+0.044, +0.072]  SD3/FLUX: [+0.050, +0.089]  OpenFake: [+0.093, +0.121]
+ours (frozen 17)        abl             0.977   0.977            0.971   0.969            0.986   0.987    0.500   synthbuster: [+0.011, +0.019]  SD3/FLUX: [+0.012, +0.022]  OpenFake: [+0.005, +0.011]
+univfd                  B             0.510   0.546            0.309   0.337            0.296   0.330    0.447   synthbuster: [+0.417, +0.474]  SD3/FLUX: [+0.613, +0.682]  OpenFake: [+0.640, +0.687]
+corvi                   B             0.771   0.773            0.919   0.921            0.897   0.898    0.519   synthbuster: [+0.207, +0.231]  SD3/FLUX: [+0.049, +0.081]  OpenFake: [+0.085, +0.111]
+bfree                   B             0.985   0.987            0.941   0.947            0.743   0.764    0.452   synthbuster: [-0.002, +0.012]  SD3/FLUX: [+0.023, +0.054]  OpenFake: [+0.213, +0.251]
+TABLE 1 (full sets)
+== q90   n fakes: synthbuster 1200, SD3/FLUX 2000, OpenFake 3485;  RAISE reals: 140 -> 1140
+method                 blk  synthbuster 140  ->1140     SD3/FLUX 140  ->1140     OpenFake 140  ->1140   null-C   ours-minus-method 95% CI (enlarged reals)
+ours (per-tile)         A             0.922   0.922            0.954   0.953            0.938   0.937    0.499   
+ours (quality-aware)    abl             0.883   0.879            0.932   0.926            0.884   0.880    0.492   synthbuster: [+0.036, +0.051]  SD3/FLUX: [+0.020, +0.032]  OpenFake: [+0.050, +0.064]
+ZED (rebuild)           A             0.789   0.807            0.650   0.676            0.610   0.645    0.463   synthbuster: [+0.097, +0.135]  SD3/FLUX: [+0.257, +0.296]  OpenFake: [+0.273, +0.313]
+rigid                   A             0.278   0.277            0.212   0.211            0.320   0.319    0.496   synthbuster: [+0.626, +0.666]  SD3/FLUX: [+0.724, +0.759]  OpenFake: [+0.599, +0.637]
+aeroblade               A                 -       -                -       -                -       -    0.504   
+sonoda2026              A             0.165   0.172            0.252   0.269            0.258   0.275    0.464   synthbuster: [+0.730, +0.768]  SD3/FLUX: [+0.663, +0.703]  OpenFake: [+0.643, +0.680]
+px-ijepa                A             0.593   0.570            0.739   0.719            0.636   0.614    0.523   synthbuster: [+0.326, +0.376]  SD3/FLUX: [+0.212, +0.254]  OpenFake: [+0.302, +0.344]
+px-cjepa                A             0.514   0.541            0.473   0.504            0.526   0.552    0.469   synthbuster: [+0.354, +0.406]  SD3/FLUX: [+0.425, +0.473]  OpenFake: [+0.363, +0.409]
+px-lejepa               A             0.709   0.699            0.723   0.715            0.687   0.675    0.525   synthbuster: [+0.200, +0.244]  SD3/FLUX: [+0.217, +0.258]  OpenFake: [+0.242, +0.280]
+px-data2vec             A             0.510   0.483            0.690   0.660            0.584   0.555    0.530   synthbuster: [+0.414, +0.460]  SD3/FLUX: [+0.272, +0.314]  OpenFake: [+0.360, +0.403]
+px-vjepa                A             0.565   0.551            0.764   0.751            0.593   0.578    0.515   synthbuster: [+0.346, +0.395]  SD3/FLUX: [+0.183, +0.221]  OpenFake: [+0.338, +0.381]
+px-dseq                 A             0.308   0.277            0.370   0.334            0.365   0.331    0.544   synthbuster: [+0.623, +0.664]  SD3/FLUX: [+0.599, +0.639]  OpenFake: [+0.587, +0.625]
+px-mae                  A             0.892   0.893            0.872   0.871            0.796   0.788    0.521   synthbuster: [+0.012, +0.044]  SD3/FLUX: [+0.066, +0.096]  OpenFake: [+0.132, +0.168]
+ours (frozen 17)        abl             0.877   0.875            0.910   0.907            0.876   0.874    0.491   synthbuster: [+0.039, +0.055]  SD3/FLUX: [+0.039, +0.052]  OpenFake: [+0.055, +0.070]
+univfd                  B             0.433   0.467            0.261   0.293            0.274   0.310    0.452   synthbuster: [+0.434, +0.477]  SD3/FLUX: [+0.641, +0.677]  OpenFake: [+0.608, +0.646]
+corvi                   B             0.751   0.745            0.832   0.821            0.824   0.822    0.527   synthbuster: [+0.162, +0.190]  SD3/FLUX: [+0.119, +0.146]  OpenFake: [+0.100, +0.130]
+bfree                   B             0.991   0.991            0.904   0.912            0.733   0.748    0.463   synthbuster: [-0.081, -0.059]  SD3/FLUX: [+0.028, +0.052]  OpenFake: [+0.173, +0.204]
+TABLE 2 (declared subsets)
+== q90   n fakes: synthbuster 400, SD3/FLUX 300, OpenFake 750;  RAISE reals: 140 -> 1140
+method                 blk  synthbuster 140  ->1140     SD3/FLUX 140  ->1140     OpenFake 140  ->1140   null-C   ours-minus-method 95% CI (enlarged reals)
+ours (per-tile)         A             0.919   0.920            0.955   0.953            0.943   0.941    0.499   
+ours (quality-aware)    abl             0.877   0.873            0.938   0.931            0.888   0.884    0.492   synthbuster: [+0.037, +0.056]  SD3/FLUX: [+0.015, +0.028]  OpenFake: [+0.048, +0.065]
+ZED (rebuild)           A             0.776   0.795            0.648   0.674            0.607   0.643    0.463   synthbuster: [+0.102, +0.148]  SD3/FLUX: [+0.247, +0.314]  OpenFake: [+0.275, +0.324]
+rigid                   A             0.272   0.271            0.217   0.215            0.328   0.329    0.496   synthbuster: [+0.620, +0.677]  SD3/FLUX: [+0.705, +0.766]  OpenFake: [+0.589, +0.637]
+aeroblade               A             0.578   0.581            0.619   0.622            0.673   0.680    0.504   synthbuster: [+0.311, +0.365]  SD3/FLUX: [+0.299, +0.360]  OpenFake: [+0.241, +0.281]
+sonoda2026              A             0.175   0.182            0.241   0.259            0.253   0.269    0.464   synthbuster: [+0.710, +0.763]  SD3/FLUX: [+0.661, +0.726]  OpenFake: [+0.648, +0.696]
+px-ijepa                A             0.597   0.576            0.736   0.714            0.651   0.630    0.523   synthbuster: [+0.313, +0.374]  SD3/FLUX: [+0.207, +0.269]  OpenFake: [+0.284, +0.338]
+px-cjepa                A             0.519   0.548            0.476   0.507            0.524   0.551    0.469   synthbuster: [+0.340, +0.404]  SD3/FLUX: [+0.412, +0.480]  OpenFake: [+0.362, +0.417]
+px-lejepa               A             0.723   0.713            0.722   0.713            0.693   0.681    0.525   synthbuster: [+0.175, +0.238]  SD3/FLUX: [+0.206, +0.274]  OpenFake: [+0.235, +0.285]
+px-data2vec             A             0.521   0.493            0.692   0.661            0.592   0.562    0.530   synthbuster: [+0.396, +0.455]  SD3/FLUX: [+0.261, +0.322]  OpenFake: [+0.354, +0.403]
+px-vjepa                A             0.562   0.548            0.765   0.752            0.612   0.596    0.515   synthbuster: [+0.340, +0.402]  SD3/FLUX: [+0.170, +0.231]  OpenFake: [+0.317, +0.371]
+px-dseq                 A             0.329   0.299            0.364   0.330            0.379   0.345    0.544   synthbuster: [+0.589, +0.649]  SD3/FLUX: [+0.590, +0.657]  OpenFake: [+0.573, +0.621]
+px-mae                  A             0.886   0.887            0.875   0.874            0.784   0.775    0.521   synthbuster: [+0.010, +0.055]  SD3/FLUX: [+0.052, +0.104]  OpenFake: [+0.144, +0.188]
+ours (frozen 17)        abl             0.870   0.868            0.915   0.913            0.881   0.879    0.491   synthbuster: [+0.041, +0.061]  SD3/FLUX: [+0.032, +0.048]  OpenFake: [+0.054, +0.071]
+univfd                  B             0.428   0.461            0.255   0.287            0.282   0.318    0.452   synthbuster: [+0.426, +0.489]  SD3/FLUX: [+0.628, +0.702]  OpenFake: [+0.597, +0.647]
+corvi                   B             0.750   0.745            0.830   0.821            0.830   0.828    0.527   synthbuster: [+0.155, +0.192]  SD3/FLUX: [+0.109, +0.154]  OpenFake: [+0.093, +0.134]
+bfree                   B             0.987   0.988            0.912   0.920            0.737   0.753    0.463   synthbuster: [-0.083, -0.054]  SD3/FLUX: [+0.011, +0.054]  OpenFake: [+0.168, +0.212]
+
+OURS PER SEED (RAISE-only AUROC, mean over generators; 140 reals -> enlarged) and null-A on the enlarged RAISE set
+ours (per-tile)        s0 raw  null-A 0.502   synthbuster 0.989->0.990   SD3/FLUX 0.983->0.983   OpenFake 0.993->0.994
+ours (per-tile)        s1 raw  null-A 0.499   synthbuster 0.991->0.990   SD3/FLUX 0.985->0.985   OpenFake 0.994->0.994
+ours (per-tile)        s2 raw  null-A 0.500   synthbuster 0.995->0.994   SD3/FLUX 0.989->0.987   OpenFake 0.996->0.995
+ours (per-tile)        s0 q90  null-A 0.500   synthbuster 0.922->0.921   SD3/FLUX 0.954->0.951   OpenFake 0.937->0.935
+ours (per-tile)        s1 q90  null-A 0.499   synthbuster 0.916->0.918   SD3/FLUX 0.948->0.949   OpenFake 0.934->0.934
+ours (per-tile)        s2 q90  null-A 0.500   synthbuster 0.927->0.926   SD3/FLUX 0.961->0.958   OpenFake 0.944->0.942
+ours (quality-aware)   s0 raw  null-A 0.498   synthbuster 0.986->0.985   SD3/FLUX 0.981->0.978   OpenFake 0.992->0.991
+ours (quality-aware)   s1 raw  null-A 0.501   synthbuster 0.985->0.981   SD3/FLUX 0.978->0.974   OpenFake 0.993->0.990
+ours (quality-aware)   s2 raw  null-A 0.500   synthbuster 0.990->0.985   SD3/FLUX 0.986->0.979   OpenFake 0.993->0.991
+ours (quality-aware)   s0 q90  null-A 0.500   synthbuster 0.893->0.892   SD3/FLUX 0.942->0.937   OpenFake 0.895->0.894
+ours (quality-aware)   s1 q90  null-A 0.500   synthbuster 0.863->0.857   SD3/FLUX 0.916->0.911   OpenFake 0.868->0.861
+ours (quality-aware)   s2 q90  null-A 0.498   synthbuster 0.891->0.887   SD3/FLUX 0.939->0.931   OpenFake 0.890->0.887
+ours (frozen 17)       s0 raw  null-A 0.498   synthbuster 0.979->0.977   SD3/FLUX 0.974->0.970   OpenFake 0.986->0.987
+ours (frozen 17)       s1 raw  null-A 0.500   synthbuster 0.963->0.966   SD3/FLUX 0.955->0.958   OpenFake 0.977->0.980
+ours (frozen 17)       s2 raw  null-A 0.500   synthbuster 0.988->0.984   SD3/FLUX 0.982->0.977   OpenFake 0.993->0.991
+ours (frozen 17)       s0 q90  null-A 0.499   synthbuster 0.887->0.881   SD3/FLUX 0.924->0.918   OpenFake 0.888->0.883
+ours (frozen 17)       s1 q90  null-A 0.500   synthbuster 0.845->0.851   SD3/FLUX 0.884->0.889   OpenFake 0.849->0.854
+ours (frozen 17)       s2 q90  null-A 0.499   synthbuster 0.898->0.892   SD3/FLUX 0.923->0.916   OpenFake 0.891->0.885
+wrote /NAS_DISK/Saptarshi_data/ajepa/runs/a24/main_comparison_opt2.csv

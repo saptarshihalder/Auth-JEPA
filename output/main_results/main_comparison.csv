@@ -1,0 +1,223 @@
+detector,type,fake_set,protocol,benchmark,auroc_140_reals,auroc_1140_reals,ours_minus_detector_ci95_1140,null_C
+Auth-JEPA (ours),never trained on generated images,full,raw,synthbuster,0.992,0.991,,0.503
+Auth-JEPA (ours),never trained on generated images,full,raw,SD3/FLUX,0.986,0.985,,0.503
+Auth-JEPA (ours),never trained on generated images,full,raw,OpenFake,0.995,0.994,,0.503
+"Auth-JEPA, cross-tile attention (ablation)",ablation,full,raw,synthbuster,0.987,0.984,"[+0.005, +0.010]",0.501
+"Auth-JEPA, cross-tile attention (ablation)",ablation,full,raw,SD3/FLUX,0.982,0.977,"[+0.004, +0.011]",0.501
+"Auth-JEPA, cross-tile attention (ablation)",ablation,full,raw,OpenFake,0.993,0.991,"[+0.001, +0.005]",0.501
+ZED,never trained on generated images,full,raw,synthbuster,0.804,0.800,"[+0.178, +0.204]",0.504
+ZED,never trained on generated images,full,raw,SD3/FLUX,0.621,0.615,"[+0.349, +0.391]",0.504
+ZED,never trained on generated images,full,raw,OpenFake,0.557,0.550,"[+0.423, +0.464]",0.504
+RIGID,never trained on generated images,full,raw,synthbuster,0.263,0.260,"[+0.713, +0.749]",0.493
+RIGID,never trained on generated images,full,raw,SD3/FLUX,0.213,0.208,"[+0.760, +0.792]",0.493
+RIGID,never trained on generated images,full,raw,OpenFake,0.349,0.350,"[+0.626, +0.663]",0.493
+Sonoda & Srinivasan,never trained on generated images,full,raw,synthbuster,0.264,0.275,"[+0.698, +0.736]",0.475
+Sonoda & Srinivasan,never trained on generated images,full,raw,SD3/FLUX,0.357,0.373,"[+0.591, +0.633]",0.475
+Sonoda & Srinivasan,never trained on generated images,full,raw,OpenFake,0.397,0.416,"[+0.560, +0.596]",0.475
+I-JEPA,never trained on generated images,full,raw,synthbuster,0.669,0.647,"[+0.321, +0.364]",0.526
+I-JEPA,never trained on generated images,full,raw,SD3/FLUX,0.754,0.735,"[+0.231, +0.267]",0.526
+I-JEPA,never trained on generated images,full,raw,OpenFake,0.702,0.682,"[+0.294, +0.332]",0.526
+C-JEPA,never trained on generated images,full,raw,synthbuster,0.568,0.577,"[+0.390, +0.438]",0.482
+C-JEPA,never trained on generated images,full,raw,SD3/FLUX,0.499,0.513,"[+0.448, +0.495]",0.482
+C-JEPA,never trained on generated images,full,raw,OpenFake,0.560,0.570,"[+0.404, +0.446]",0.482
+LeJEPA,never trained on generated images,full,raw,synthbuster,0.739,0.727,"[+0.242, +0.285]",0.529
+LeJEPA,never trained on generated images,full,raw,SD3/FLUX,0.703,0.688,"[+0.275, +0.316]",0.529
+LeJEPA,never trained on generated images,full,raw,OpenFake,0.714,0.702,"[+0.273, +0.310]",0.529
+data2vec 2.0,never trained on generated images,full,raw,synthbuster,0.515,0.477,"[+0.490, +0.535]",0.542
+data2vec 2.0,never trained on generated images,full,raw,SD3/FLUX,0.665,0.624,"[+0.340, +0.382]",0.542
+data2vec 2.0,never trained on generated images,full,raw,OpenFake,0.597,0.557,"[+0.416, +0.458]",0.542
+V-JEPA,never trained on generated images,full,raw,synthbuster,0.636,0.625,"[+0.343, +0.387]",0.516
+V-JEPA,never trained on generated images,full,raw,SD3/FLUX,0.770,0.761,"[+0.207, +0.242]",0.516
+V-JEPA,never trained on generated images,full,raw,OpenFake,0.661,0.650,"[+0.324, +0.364]",0.516
+DSeq-JEPA,never trained on generated images,full,raw,synthbuster,0.360,0.316,"[+0.655, +0.695]",0.553
+DSeq-JEPA,never trained on generated images,full,raw,SD3/FLUX,0.384,0.339,"[+0.627, +0.665]",0.553
+DSeq-JEPA,never trained on generated images,full,raw,OpenFake,0.417,0.370,"[+0.605, +0.644]",0.553
+MAE,never trained on generated images,full,raw,synthbuster,0.928,0.936,"[+0.045, +0.065]",0.512
+MAE,never trained on generated images,full,raw,SD3/FLUX,0.906,0.914,"[+0.059, +0.082]",0.512
+MAE,never trained on generated images,full,raw,OpenFake,0.888,0.894,"[+0.090, +0.110]",0.512
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,full,raw,synthbuster,0.977,0.976,"[+0.012, +0.019]",0.500
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,full,raw,SD3/FLUX,0.971,0.968,"[+0.012, +0.021]",0.500
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,full,raw,OpenFake,0.985,0.986,"[+0.006, +0.011]",0.500
+UnivFD,trained on generated images,full,raw,synthbuster,0.510,0.544,"[+0.428, +0.465]",0.447
+UnivFD,trained on generated images,full,raw,SD3/FLUX,0.320,0.350,"[+0.619, +0.650]",0.447
+UnivFD,trained on generated images,full,raw,OpenFake,0.293,0.328,"[+0.649, +0.683]",0.447
+Corvi2023,trained on generated images,full,raw,synthbuster,0.777,0.777,"[+0.206, +0.222]",0.519
+Corvi2023,trained on generated images,full,raw,SD3/FLUX,0.921,0.922,"[+0.054, +0.071]",0.519
+Corvi2023,trained on generated images,full,raw,OpenFake,0.895,0.897,"[+0.087, +0.108]",0.519
+B-Free,trained on generated images,full,raw,synthbuster,0.988,0.990,"[-0.003, +0.005]",0.452
+B-Free,trained on generated images,full,raw,SD3/FLUX,0.933,0.940,"[+0.036, +0.053]",0.452
+B-Free,trained on generated images,full,raw,OpenFake,0.743,0.763,"[+0.218, +0.245]",0.452
+NPR,trained on generated images,full,raw,synthbuster,0.313,0.304,"[+0.667, +0.706]",0.495
+NPR,trained on generated images,full,raw,SD3/FLUX,0.535,0.536,"[+0.425, +0.473]",0.495
+NPR,trained on generated images,full,raw,OpenFake,0.454,0.459,"[+0.517, +0.553]",0.495
+Community Forensics,trained on generated images,full,raw,synthbuster,0.983,0.982,"[+0.005, +0.014]",0.532
+Community Forensics,trained on generated images,full,raw,SD3/FLUX,0.951,0.948,"[+0.029, +0.045]",0.532
+Community Forensics,trained on generated images,full,raw,OpenFake,0.848,0.842,"[+0.139, +0.166]",0.532
+Auth-JEPA (ours),never trained on generated images,full,q90,synthbuster,0.922,0.922,,0.499
+Auth-JEPA (ours),never trained on generated images,full,q90,SD3/FLUX,0.954,0.953,,0.499
+Auth-JEPA (ours),never trained on generated images,full,q90,OpenFake,0.938,0.937,,0.499
+"Auth-JEPA, cross-tile attention (ablation)",ablation,full,q90,synthbuster,0.883,0.879,"[+0.036, +0.051]",0.492
+"Auth-JEPA, cross-tile attention (ablation)",ablation,full,q90,SD3/FLUX,0.932,0.926,"[+0.020, +0.032]",0.492
+"Auth-JEPA, cross-tile attention (ablation)",ablation,full,q90,OpenFake,0.884,0.880,"[+0.050, +0.064]",0.492
+ZED,never trained on generated images,full,q90,synthbuster,0.789,0.807,"[+0.097, +0.135]",0.463
+ZED,never trained on generated images,full,q90,SD3/FLUX,0.650,0.676,"[+0.257, +0.296]",0.463
+ZED,never trained on generated images,full,q90,OpenFake,0.610,0.645,"[+0.273, +0.313]",0.463
+RIGID,never trained on generated images,full,q90,synthbuster,0.278,0.277,"[+0.626, +0.666]",0.496
+RIGID,never trained on generated images,full,q90,SD3/FLUX,0.212,0.211,"[+0.724, +0.759]",0.496
+RIGID,never trained on generated images,full,q90,OpenFake,0.320,0.319,"[+0.599, +0.637]",0.496
+Sonoda & Srinivasan,never trained on generated images,full,q90,synthbuster,0.165,0.172,"[+0.730, +0.768]",0.464
+Sonoda & Srinivasan,never trained on generated images,full,q90,SD3/FLUX,0.252,0.269,"[+0.663, +0.703]",0.464
+Sonoda & Srinivasan,never trained on generated images,full,q90,OpenFake,0.258,0.275,"[+0.643, +0.680]",0.464
+I-JEPA,never trained on generated images,full,q90,synthbuster,0.593,0.570,"[+0.326, +0.376]",0.523
+I-JEPA,never trained on generated images,full,q90,SD3/FLUX,0.739,0.719,"[+0.212, +0.254]",0.523
+I-JEPA,never trained on generated images,full,q90,OpenFake,0.636,0.614,"[+0.302, +0.344]",0.523
+C-JEPA,never trained on generated images,full,q90,synthbuster,0.514,0.541,"[+0.354, +0.406]",0.469
+C-JEPA,never trained on generated images,full,q90,SD3/FLUX,0.473,0.504,"[+0.425, +0.473]",0.469
+C-JEPA,never trained on generated images,full,q90,OpenFake,0.526,0.552,"[+0.363, +0.409]",0.469
+LeJEPA,never trained on generated images,full,q90,synthbuster,0.709,0.699,"[+0.200, +0.244]",0.525
+LeJEPA,never trained on generated images,full,q90,SD3/FLUX,0.723,0.715,"[+0.217, +0.258]",0.525
+LeJEPA,never trained on generated images,full,q90,OpenFake,0.687,0.675,"[+0.242, +0.280]",0.525
+data2vec 2.0,never trained on generated images,full,q90,synthbuster,0.510,0.483,"[+0.414, +0.460]",0.530
+data2vec 2.0,never trained on generated images,full,q90,SD3/FLUX,0.690,0.660,"[+0.272, +0.314]",0.530
+data2vec 2.0,never trained on generated images,full,q90,OpenFake,0.584,0.555,"[+0.360, +0.403]",0.530
+V-JEPA,never trained on generated images,full,q90,synthbuster,0.565,0.551,"[+0.346, +0.395]",0.515
+V-JEPA,never trained on generated images,full,q90,SD3/FLUX,0.764,0.751,"[+0.183, +0.221]",0.515
+V-JEPA,never trained on generated images,full,q90,OpenFake,0.593,0.578,"[+0.338, +0.381]",0.515
+DSeq-JEPA,never trained on generated images,full,q90,synthbuster,0.308,0.277,"[+0.623, +0.664]",0.544
+DSeq-JEPA,never trained on generated images,full,q90,SD3/FLUX,0.370,0.334,"[+0.599, +0.639]",0.544
+DSeq-JEPA,never trained on generated images,full,q90,OpenFake,0.365,0.331,"[+0.587, +0.625]",0.544
+MAE,never trained on generated images,full,q90,synthbuster,0.892,0.893,"[+0.012, +0.044]",0.521
+MAE,never trained on generated images,full,q90,SD3/FLUX,0.872,0.871,"[+0.066, +0.096]",0.521
+MAE,never trained on generated images,full,q90,OpenFake,0.796,0.788,"[+0.132, +0.168]",0.521
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,full,q90,synthbuster,0.877,0.875,"[+0.039, +0.055]",0.491
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,full,q90,SD3/FLUX,0.910,0.907,"[+0.039, +0.052]",0.491
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,full,q90,OpenFake,0.876,0.874,"[+0.055, +0.070]",0.491
+UnivFD,trained on generated images,full,q90,synthbuster,0.433,0.467,"[+0.434, +0.477]",0.452
+UnivFD,trained on generated images,full,q90,SD3/FLUX,0.261,0.293,"[+0.641, +0.677]",0.452
+UnivFD,trained on generated images,full,q90,OpenFake,0.274,0.310,"[+0.608, +0.646]",0.452
+Corvi2023,trained on generated images,full,q90,synthbuster,0.751,0.745,"[+0.162, +0.190]",0.527
+Corvi2023,trained on generated images,full,q90,SD3/FLUX,0.832,0.821,"[+0.119, +0.146]",0.527
+Corvi2023,trained on generated images,full,q90,OpenFake,0.824,0.822,"[+0.100, +0.130]",0.527
+B-Free,trained on generated images,full,q90,synthbuster,0.991,0.991,"[-0.081, -0.059]",0.463
+B-Free,trained on generated images,full,q90,SD3/FLUX,0.904,0.912,"[+0.028, +0.052]",0.463
+B-Free,trained on generated images,full,q90,OpenFake,0.733,0.748,"[+0.173, +0.204]",0.463
+NPR,trained on generated images,full,q90,synthbuster,0.471,0.513,"[+0.385, +0.432]",0.459
+NPR,trained on generated images,full,q90,SD3/FLUX,0.595,0.638,"[+0.293, +0.336]",0.459
+NPR,trained on generated images,full,q90,OpenFake,0.419,0.463,"[+0.453, +0.495]",0.459
+Community Forensics,trained on generated images,full,q90,synthbuster,0.990,0.989,"[-0.077, -0.057]",0.519
+Community Forensics,trained on generated images,full,q90,SD3/FLUX,0.931,0.926,"[+0.017, +0.038]",0.519
+Community Forensics,trained on generated images,full,q90,OpenFake,0.829,0.819,"[+0.105, +0.133]",0.519
+Auth-JEPA (ours),never trained on generated images,subset,raw,synthbuster,0.992,0.992,,0.503
+Auth-JEPA (ours),never trained on generated images,subset,raw,SD3/FLUX,0.986,0.985,,0.503
+Auth-JEPA (ours),never trained on generated images,subset,raw,OpenFake,0.995,0.995,,0.503
+"Auth-JEPA, cross-tile attention (ablation)",ablation,subset,raw,synthbuster,0.988,0.985,"[+0.004, +0.009]",0.501
+"Auth-JEPA, cross-tile attention (ablation)",ablation,subset,raw,SD3/FLUX,0.982,0.978,"[+0.004, +0.012]",0.501
+"Auth-JEPA, cross-tile attention (ablation)",ablation,subset,raw,OpenFake,0.993,0.991,"[+0.001, +0.005]",0.501
+ZED,never trained on generated images,subset,raw,synthbuster,0.796,0.792,"[+0.184, +0.216]",0.504
+ZED,never trained on generated images,subset,raw,SD3/FLUX,0.619,0.614,"[+0.340, +0.404]",0.504
+ZED,never trained on generated images,subset,raw,OpenFake,0.558,0.551,"[+0.420, +0.468]",0.504
+RIGID,never trained on generated images,subset,raw,synthbuster,0.263,0.260,"[+0.708, +0.756]",0.493
+RIGID,never trained on generated images,subset,raw,SD3/FLUX,0.213,0.207,"[+0.748, +0.806]",0.493
+RIGID,never trained on generated images,subset,raw,OpenFake,0.361,0.363,"[+0.611, +0.655]",0.493
+AEROBLADE,never trained on generated images,subset,raw,synthbuster,0.644,0.644,"[+0.324, +0.370]",0.508
+AEROBLADE,never trained on generated images,subset,raw,SD3/FLUX,0.643,0.646,"[+0.308, +0.369]",0.508
+AEROBLADE,never trained on generated images,subset,raw,OpenFake,0.711,0.718,"[+0.256, +0.296]",0.508
+Sonoda & Srinivasan,never trained on generated images,subset,raw,synthbuster,0.261,0.272,"[+0.693, +0.746]",0.475
+Sonoda & Srinivasan,never trained on generated images,subset,raw,SD3/FLUX,0.347,0.365,"[+0.588, +0.656]",0.475
+Sonoda & Srinivasan,never trained on generated images,subset,raw,OpenFake,0.392,0.409,"[+0.561, +0.609]",0.475
+I-JEPA,never trained on generated images,subset,raw,synthbuster,0.669,0.648,"[+0.316, +0.373]",0.526
+I-JEPA,never trained on generated images,subset,raw,SD3/FLUX,0.749,0.729,"[+0.226, +0.285]",0.526
+I-JEPA,never trained on generated images,subset,raw,OpenFake,0.717,0.697,"[+0.275, +0.321]",0.526
+C-JEPA,never trained on generated images,subset,raw,synthbuster,0.581,0.589,"[+0.373, +0.430]",0.482
+C-JEPA,never trained on generated images,subset,raw,SD3/FLUX,0.507,0.520,"[+0.435, +0.497]",0.482
+C-JEPA,never trained on generated images,subset,raw,OpenFake,0.561,0.574,"[+0.395, +0.444]",0.482
+LeJEPA,never trained on generated images,subset,raw,synthbuster,0.748,0.739,"[+0.226, +0.281]",0.529
+LeJEPA,never trained on generated images,subset,raw,SD3/FLUX,0.702,0.687,"[+0.265, +0.329]",0.529
+LeJEPA,never trained on generated images,subset,raw,OpenFake,0.725,0.714,"[+0.259, +0.302]",0.529
+data2vec 2.0,never trained on generated images,subset,raw,synthbuster,0.524,0.486,"[+0.476, +0.531]",0.542
+data2vec 2.0,never trained on generated images,subset,raw,SD3/FLUX,0.667,0.627,"[+0.327, +0.390]",0.542
+data2vec 2.0,never trained on generated images,subset,raw,OpenFake,0.605,0.565,"[+0.406, +0.453]",0.542
+V-JEPA,never trained on generated images,subset,raw,synthbuster,0.626,0.614,"[+0.346, +0.406]",0.516
+V-JEPA,never trained on generated images,subset,raw,SD3/FLUX,0.769,0.759,"[+0.197, +0.256]",0.516
+V-JEPA,never trained on generated images,subset,raw,OpenFake,0.682,0.671,"[+0.301, +0.347]",0.516
+DSeq-JEPA,never trained on generated images,subset,raw,synthbuster,0.376,0.331,"[+0.628, +0.688]",0.553
+DSeq-JEPA,never trained on generated images,subset,raw,SD3/FLUX,0.379,0.335,"[+0.616, +0.682]",0.553
+DSeq-JEPA,never trained on generated images,subset,raw,OpenFake,0.432,0.386,"[+0.585, +0.634]",0.553
+MAE,never trained on generated images,subset,raw,synthbuster,0.924,0.934,"[+0.044, +0.072]",0.512
+MAE,never trained on generated images,subset,raw,SD3/FLUX,0.908,0.916,"[+0.050, +0.089]",0.512
+MAE,never trained on generated images,subset,raw,OpenFake,0.883,0.888,"[+0.093, +0.121]",0.512
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,subset,raw,synthbuster,0.977,0.977,"[+0.011, +0.019]",0.500
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,subset,raw,SD3/FLUX,0.971,0.969,"[+0.012, +0.022]",0.500
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,subset,raw,OpenFake,0.986,0.987,"[+0.005, +0.011]",0.500
+UnivFD,trained on generated images,subset,raw,synthbuster,0.510,0.546,"[+0.417, +0.474]",0.447
+UnivFD,trained on generated images,subset,raw,SD3/FLUX,0.309,0.337,"[+0.613, +0.682]",0.447
+UnivFD,trained on generated images,subset,raw,OpenFake,0.296,0.330,"[+0.640, +0.687]",0.447
+Corvi2023,trained on generated images,subset,raw,synthbuster,0.771,0.773,"[+0.207, +0.231]",0.519
+Corvi2023,trained on generated images,subset,raw,SD3/FLUX,0.919,0.921,"[+0.049, +0.081]",0.519
+Corvi2023,trained on generated images,subset,raw,OpenFake,0.897,0.898,"[+0.085, +0.111]",0.519
+B-Free,trained on generated images,subset,raw,synthbuster,0.985,0.987,"[-0.002, +0.012]",0.452
+B-Free,trained on generated images,subset,raw,SD3/FLUX,0.941,0.947,"[+0.023, +0.054]",0.452
+B-Free,trained on generated images,subset,raw,OpenFake,0.743,0.764,"[+0.213, +0.251]",0.452
+NPR,trained on generated images,subset,raw,synthbuster,0.300,0.292,"[+0.678, +0.721]",0.495
+NPR,trained on generated images,subset,raw,SD3/FLUX,0.534,0.533,"[+0.421, +0.484]",0.495
+NPR,trained on generated images,subset,raw,OpenFake,0.461,0.466,"[+0.507, +0.550]",0.495
+Community Forensics,trained on generated images,subset,raw,synthbuster,0.984,0.983,"[+0.004, +0.014]",0.532
+Community Forensics,trained on generated images,subset,raw,SD3/FLUX,0.940,0.937,"[+0.035, +0.061]",0.532
+Community Forensics,trained on generated images,subset,raw,OpenFake,0.847,0.840,"[+0.138, +0.170]",0.532
+Auth-JEPA (ours),never trained on generated images,subset,q90,synthbuster,0.919,0.920,,0.499
+Auth-JEPA (ours),never trained on generated images,subset,q90,SD3/FLUX,0.955,0.953,,0.499
+Auth-JEPA (ours),never trained on generated images,subset,q90,OpenFake,0.943,0.941,,0.499
+"Auth-JEPA, cross-tile attention (ablation)",ablation,subset,q90,synthbuster,0.877,0.873,"[+0.037, +0.056]",0.492
+"Auth-JEPA, cross-tile attention (ablation)",ablation,subset,q90,SD3/FLUX,0.938,0.931,"[+0.015, +0.028]",0.492
+"Auth-JEPA, cross-tile attention (ablation)",ablation,subset,q90,OpenFake,0.888,0.884,"[+0.048, +0.065]",0.492
+ZED,never trained on generated images,subset,q90,synthbuster,0.776,0.795,"[+0.102, +0.148]",0.463
+ZED,never trained on generated images,subset,q90,SD3/FLUX,0.648,0.674,"[+0.247, +0.314]",0.463
+ZED,never trained on generated images,subset,q90,OpenFake,0.607,0.643,"[+0.275, +0.324]",0.463
+RIGID,never trained on generated images,subset,q90,synthbuster,0.272,0.271,"[+0.620, +0.677]",0.496
+RIGID,never trained on generated images,subset,q90,SD3/FLUX,0.217,0.215,"[+0.705, +0.766]",0.496
+RIGID,never trained on generated images,subset,q90,OpenFake,0.328,0.329,"[+0.589, +0.637]",0.496
+AEROBLADE,never trained on generated images,subset,q90,synthbuster,0.578,0.581,"[+0.311, +0.365]",0.504
+AEROBLADE,never trained on generated images,subset,q90,SD3/FLUX,0.619,0.622,"[+0.299, +0.360]",0.504
+AEROBLADE,never trained on generated images,subset,q90,OpenFake,0.673,0.680,"[+0.241, +0.281]",0.504
+Sonoda & Srinivasan,never trained on generated images,subset,q90,synthbuster,0.175,0.182,"[+0.710, +0.763]",0.464
+Sonoda & Srinivasan,never trained on generated images,subset,q90,SD3/FLUX,0.241,0.259,"[+0.661, +0.726]",0.464
+Sonoda & Srinivasan,never trained on generated images,subset,q90,OpenFake,0.253,0.269,"[+0.648, +0.696]",0.464
+I-JEPA,never trained on generated images,subset,q90,synthbuster,0.597,0.576,"[+0.313, +0.374]",0.523
+I-JEPA,never trained on generated images,subset,q90,SD3/FLUX,0.736,0.714,"[+0.207, +0.269]",0.523
+I-JEPA,never trained on generated images,subset,q90,OpenFake,0.651,0.630,"[+0.284, +0.338]",0.523
+C-JEPA,never trained on generated images,subset,q90,synthbuster,0.519,0.548,"[+0.340, +0.404]",0.469
+C-JEPA,never trained on generated images,subset,q90,SD3/FLUX,0.476,0.507,"[+0.412, +0.480]",0.469
+C-JEPA,never trained on generated images,subset,q90,OpenFake,0.524,0.551,"[+0.362, +0.417]",0.469
+LeJEPA,never trained on generated images,subset,q90,synthbuster,0.723,0.713,"[+0.175, +0.238]",0.525
+LeJEPA,never trained on generated images,subset,q90,SD3/FLUX,0.722,0.713,"[+0.206, +0.274]",0.525
+LeJEPA,never trained on generated images,subset,q90,OpenFake,0.693,0.681,"[+0.235, +0.285]",0.525
+data2vec 2.0,never trained on generated images,subset,q90,synthbuster,0.521,0.493,"[+0.396, +0.455]",0.530
+data2vec 2.0,never trained on generated images,subset,q90,SD3/FLUX,0.692,0.661,"[+0.261, +0.322]",0.530
+data2vec 2.0,never trained on generated images,subset,q90,OpenFake,0.592,0.562,"[+0.354, +0.403]",0.530
+V-JEPA,never trained on generated images,subset,q90,synthbuster,0.562,0.548,"[+0.340, +0.402]",0.515
+V-JEPA,never trained on generated images,subset,q90,SD3/FLUX,0.765,0.752,"[+0.170, +0.231]",0.515
+V-JEPA,never trained on generated images,subset,q90,OpenFake,0.612,0.596,"[+0.317, +0.371]",0.515
+DSeq-JEPA,never trained on generated images,subset,q90,synthbuster,0.329,0.299,"[+0.589, +0.649]",0.544
+DSeq-JEPA,never trained on generated images,subset,q90,SD3/FLUX,0.364,0.330,"[+0.590, +0.657]",0.544
+DSeq-JEPA,never trained on generated images,subset,q90,OpenFake,0.379,0.345,"[+0.573, +0.621]",0.544
+MAE,never trained on generated images,subset,q90,synthbuster,0.886,0.887,"[+0.010, +0.055]",0.521
+MAE,never trained on generated images,subset,q90,SD3/FLUX,0.875,0.874,"[+0.052, +0.104]",0.521
+MAE,never trained on generated images,subset,q90,OpenFake,0.784,0.775,"[+0.144, +0.188]",0.521
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,subset,q90,synthbuster,0.870,0.868,"[+0.041, +0.061]",0.491
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,subset,q90,SD3/FLUX,0.915,0.913,"[+0.032, +0.048]",0.491
+"Auth-JEPA, binary container, cross-tile (ablation)",ablation,subset,q90,OpenFake,0.881,0.879,"[+0.054, +0.071]",0.491
+UnivFD,trained on generated images,subset,q90,synthbuster,0.428,0.461,"[+0.426, +0.489]",0.452
+UnivFD,trained on generated images,subset,q90,SD3/FLUX,0.255,0.287,"[+0.628, +0.702]",0.452
+UnivFD,trained on generated images,subset,q90,OpenFake,0.282,0.318,"[+0.597, +0.647]",0.452
+Corvi2023,trained on generated images,subset,q90,synthbuster,0.750,0.745,"[+0.155, +0.192]",0.527
+Corvi2023,trained on generated images,subset,q90,SD3/FLUX,0.830,0.821,"[+0.109, +0.154]",0.527
+Corvi2023,trained on generated images,subset,q90,OpenFake,0.830,0.828,"[+0.093, +0.134]",0.527
+B-Free,trained on generated images,subset,q90,synthbuster,0.987,0.988,"[-0.083, -0.054]",0.463
+B-Free,trained on generated images,subset,q90,SD3/FLUX,0.912,0.920,"[+0.011, +0.054]",0.463
+B-Free,trained on generated images,subset,q90,OpenFake,0.737,0.753,"[+0.168, +0.212]",0.463
+NPR,trained on generated images,subset,q90,synthbuster,0.470,0.512,"[+0.375, +0.438]",0.459
+NPR,trained on generated images,subset,q90,SD3/FLUX,0.596,0.639,"[+0.285, +0.345]",0.459
+NPR,trained on generated images,subset,q90,OpenFake,0.409,0.454,"[+0.462, +0.512]",0.459
+Community Forensics,trained on generated images,subset,q90,synthbuster,0.991,0.990,"[-0.084, -0.058]",0.519
+Community Forensics,trained on generated images,subset,q90,SD3/FLUX,0.921,0.914,"[+0.020, +0.057]",0.519
+Community Forensics,trained on generated images,subset,q90,OpenFake,0.828,0.819,"[+0.105, +0.140]",0.519

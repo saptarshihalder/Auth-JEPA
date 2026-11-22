@@ -13,3 +13,5 @@ Detecting AI-generated images by predicting camera physics, trained on real phot
 | `07_test_conditions` | raw and JPEG-90 test images |
 | `08_auroc` | AUROC per generator, then averaged |
 | `09_two_models_threshold` | two models, calibration and the fixed cut-off |
+| `dataset` | file lists and example images for every dataset and generator |
+| `output` | result tables and output images, by slide |
