@@ -18,30 +18,29 @@ Detecting AI-generated images by predicting camera physics, trained on real phot
 
 ## Loss function and score
 
-Auth-JEPA is trained with the **Gaussian negative log-likelihood (NLL)**. For every patch $t$ of an image, the predictor gives a mean $\mu_{t,d}$ and a variance $\sigma^2_{t,d}$ for each of the 74 noise measurements $d$, and the loss compares them with the measured value $\phi_{t,d}$:
+Auth-JEPA is trained with the **Gaussian negative log-likelihood (NLL)**. For every patch *t*, the predictor gives a mean μ and a variance σ² for each of the 74 noise measurements *d*. The loss compares them with the measured value φ.
 
-$$
-\mathcal{L}_t = \frac{1}{2} \sum_{d=1}^{74} \left[ \log \sigma^2_{t,d} + \frac{(\phi_{t,d} - \mu_{t,d})^2}{\sigma^2_{t,d}} \right]
-$$
+![Loss function and image score](docs/loss_and_score.png)
 
-The first term stops the network from predicting a large spread everywhere; the second penalises a wrong prediction, scaled by the expected spread. Training minimises the mean of $\mathcal{L}_t$ over all patches of the real training photos. No AI-generated image is used.
+```
+Loss (one patch):  L_t  = 1/2 × Σ over d = 1..74 of [ log σ²(t,d) + (φ(t,d) − μ(t,d))² / σ²(t,d) ]
+Image score:       S(x) = 1/16 × Σ over t = 1..16 of L_t
+```
 
-The **image score** is the same quantity, averaged over the 16 patches of a $512 \times 512$ window:
+- **log σ²** stops the network from predicting a large spread everywhere.
+- **(φ − μ)² / σ²** penalises a wrong prediction, scaled by the expected spread.
+- **Training** minimises the mean of L_t over all patches of the real training photos. No AI-generated image is used.
+- **Image score** is the same quantity averaged over the 16 patches of a 512 × 512 window. Low = noise looks like a real camera's; high = flagged as AI-generated.
 
-$$
-S(x) = \frac{1}{16} \sum_{t=1}^{16} \mathcal{L}_t
-$$
-
-A low score means the noise looks like a real camera's; a high score flags the image as AI-generated. Both are implemented by `tile_nll` in `06_training_and_score/loss_and_score.py`.
+Both are implemented by `tile_nll` in `06_training_and_score/loss_and_score.py`.
 
 | Symbol | Meaning |
 |---|---|
-| $x$ | input image |
-| $t$ | patch, 1 to 16 |
-| $d$ | noise measurement, 1 to 74 |
-| $\phi_{t,d}$ | measured value |
-| $\mu_{t,d}$ | predicted mean |
-| $\sigma^2_{t,d}$ | predicted variance |
-| $\mathcal{L}_t$ | patch score (loss) |
-| $S(x)$ | image score |
-
+| x | input image |
+| t | patch, 1 to 16 |
+| d | noise measurement, 1 to 74 |
+| φ(t,d) | measured value |
+| μ(t,d) | predicted mean |
+| σ²(t,d) | predicted variance |
+| L_t | patch score (loss) |
+| S(x) | image score |
